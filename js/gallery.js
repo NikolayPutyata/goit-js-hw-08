@@ -84,11 +84,9 @@ const createdHtmlText = images
 
 ulGallery.insertAdjacentHTML("beforeend", createdHtmlText);
 
-// ulGallery.addEventListener("click", (event) => event.preventDefault());
+ulGallery.addEventListener("click", openImgModalFu);
 
-ulGallery.addEventListener("click", handlerFu);
-
-function handlerFu(event) {
+function openImgModalFu(event) {
   event.preventDefault();
   if (!event.target.classList.contains("gallery-image")) {
     return;

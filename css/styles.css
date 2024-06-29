@@ -6,11 +6,13 @@
   display: flex;
   padding: 24px 156px 24px 156px;
   margin: 0;
+  flex-wrap: wrap;
 }
 .gallery-item {
   margin-right: 24px;
 }
-.gallery-link {
+.gallery-item:nth-child(3n) {
+  margin-right: 0;
 }
 .gallery-image {
   width: 360px;

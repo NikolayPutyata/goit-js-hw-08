@@ -84,4 +84,19 @@ const createdHtmlText = images
 
 ulGallery.insertAdjacentHTML("beforeend", createdHtmlText);
 
-ulGallery.addEventListener("click", (event) => event.preventDefault());
+// ulGallery.addEventListener("click", (event) => event.preventDefault());
+
+ulGallery.addEventListener("click", handlerFu);
+
+function handlerFu(event) {
+  event.preventDefault();
+  if (!event.target.classList.contains("gallery-image")) {
+    return;
+  } else {
+    const img = event.target.dataset.source;
+
+    const instance = basicLightbox.create(`<img src="${img}">`);
+
+    instance.show();
+  }
+}

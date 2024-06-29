@@ -1,0 +1,18 @@
+.gallery {
+  position: relative;
+  width: 1128px;
+  height: 696px;
+  list-style: none;
+  display: flex;
+  padding: 24px 156px 24px 156px;
+  margin: 0;
+}
+.gallery-item {
+  margin-right: 24px;
+}
+.gallery-link {
+}
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
